@@ -1,0 +1,54 @@
+    <!-- ============================================================================= -->
+    <!-- To inject a collection type object -->
+    <!-- 
+    	1. List:
+    	<bean>
+	    	<property name="">
+	    		<list>
+	    			<value>10</value>
+	    			<value>101</value>
+	    			<value>1011</value>
+	    			<value>108</value>
+	    			<null/>
+	    		</list>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    2. Set:
+	    <bean>
+	    	<property name="">
+	    		<set>
+	    			<value>10</value>
+		    		<value>101</value>
+		    		<value>1011</value>
+		    		<value>108</value>
+	    		</set>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    3. Map:
+	    <bean>
+	    	<property name="">
+	    		<map>
+	    			<entry key="java" value="2month" />
+	    			<entry key="python" value="9month" />
+	    		</map>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    4. Property:
+	    <bean>
+	    	<property name="">
+	    		<props>
+	    			<prop key="name">Radha</prop>
+	    			<prop key="age">34</prop>
+	    		</props>
+	    	</property>
+	    </bean>
+    -->
