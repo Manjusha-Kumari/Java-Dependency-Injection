@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="https://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        https://www.springframework.org/schema/context
+        https://www.springframework.org/schema/spring-context.xsd">
+
+    <bean class="com.springcore.SpringCore.Student" name="Student1">
+    <!-- using setter injection -->
+    
+    	<!-- Here property and value are used as an element to define the object properties -->
+    	<property name="studentId"> 
+    		<value>22344</value>
+    	</property>
+    	
+    	<property name="studentName"> 
+    		<value>Riyal Malhotra</value>
+    	</property>
+    	
+    	<property name="studentAddress"> 
+    		<value>Delhi</value>
+    	</property>
+    	
+    	
+    	<!-- we can do this by using value as an attribute as well here we need to add the value at the time of property decleration -->
+    	<!-- 
+    		<property name="studentId" value="22344" />
+    		
+    		here / is at the end of the property tag 
+    		i.e, it signifies its a self closing tag
+    	-->
+    </bean>
+    
+    <bean class="com.springcore.SpringCore.Student" name="Student2">
+    <!-- using setter injection -->
+    	
+    	<property name="studentId" value="12345"/> 
+    	
+    	<property name="studentName" value="Rama Mehata"/>
+    	
+    	<property name="studentAddress" value="Mumbai"/>
+    </bean>
+    
+    <!-- Bean using P Schema -->
+    <!-- Note for P Schema we use http instead of https -->
+    <bean class="com.springcore.SpringCore.Student" name="Student3" p:studentId="67890" p:studentName="Keshav Raj" p:studentAddress="Lucknow"/>
+    
+    
+    
+    
+    
+    <!-- ============================================================================= -->
+    <!-- To inject a collection type object -->
+    <!-- 
+    	1. List:
+    	<bean>
+	    	<property name="">
+	    		<list>
+	    			<value>10</value>
+	    			<value>101</value>
+	    			<value>1011</value>
+	    			<value>108</value>
+	    			<null/>
+	    		</list>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    2. Set:
+	    <bean>
+	    	<property name="">
+	    		<set>
+	    			<value>10</value>
+		    		<value>101</value>
+		    		<value>1011</value>
+		    		<value>108</value>
+	    		</set>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    3. Map:
+	    <bean>
+	    	<property name="">
+	    		<map>
+	    			<entry key="java" value="2month" />
+	    			<entry key="python" value="9month" />
+	    		</map>
+	    	</property>
+	    </bean>
+	    
+	    
+	    
+	    4. Property:
+	    <bean>
+	    	<property name="">
+	    		<props>
+	    			<prop key="name">Radha</prop>
+	    			<prop key="age">34</prop>
+	    		</props>
+	    	</property>
+	    </bean>
+    -->
+
+</beans>
