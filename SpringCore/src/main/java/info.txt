@@ -69,3 +69,11 @@ B
 		<ref bean="B" />
 	</property>
 </bean>
+
+
+
+
+==============================================================================================
+Injection using constructor 
+
+Here we can use C Schema (Constructor) as at the time of setter injection we used P Schema (property)

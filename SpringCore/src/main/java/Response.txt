@@ -26,3 +26,9 @@ Commit 3 : Dependency Injection -- setter injection for reference data types
 Response :
 	A [x=50, obj=B [y=10]]
 	B [y=10]
+	
+	
+
+Commit 4 : Dependency Injection -- constructor injection
+Response :
+	Person [name=Meena, personid=12, certi=AWS by amazon]

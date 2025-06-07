@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="https://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        https://www.springframework.org/schema/context
+        https://www.springframework.org/schema/spring-context.xsd">
+
+	<bean class="com.springcore.SpringCore.Constructor.Certificate" name="cer">
+		<constructor-arg value="AWS by amazon"/>
+		<!-- using c schema use c:name="AWS by amazon"-->
+	</bean>
+
+    <bean class="com.springcore.SpringCore.Constructor.Person" name="person">
+    	<constructor-arg value="Meena"/>
+    	<constructor-arg value="12" type="int"/>
+    	<!-- type here is used to resolve the ambiguity say we have two constructors one with string and string
+    	and other with a string and int then spring might not be able to resolve what signifies what type 
+    	normally spring is preety intelligent it can distinguish between types easily but sometimes get stuck so we use type -->
+    	<constructor-arg ref="cer"/>
+    </bean>
+    
+</beans>

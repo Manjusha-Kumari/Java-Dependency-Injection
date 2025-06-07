@@ -20,6 +20,13 @@
     	<property name="obj">
     		<ref bean="bref"/>
     	</property>
+    	
+    	<!-- 
+    		<properety name="obj" ref="bref"/>  == using ref as an attribute
+    		
+    		using p schema 
+    		<bean class="" name="" p:x="30" p:obj-ref="bref"/>
+    	-->
     </bean>
     
 </beans>
