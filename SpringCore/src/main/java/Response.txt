@@ -13,3 +13,16 @@ Response :
 	Student [studentId=22344, studentName=Riyal Malhotra, studentAddress=Delhi]
 	Student [studentId=12345, studentName=Rama Mehata, studentAddress=Mumbai]
 	Student [studentId=67890, studentName=Keshav Raj, studentAddress=Lucknow]
+	
+	
+	
+Commit 2 : Dependency Injection -- setter injection for collection data types code
+Response :
+	Employee [name=Radhe, phones=[9876543210, 1234567890], addresses=[Delhi, Mumbai, Pune], courses={java=2months, python=4months}]
+	
+	
+	
+Commit 3 : Dependency Injection -- setter injection for reference data types
+Response :
+	A [x=50, obj=B [y=10]]
+	B [y=10]

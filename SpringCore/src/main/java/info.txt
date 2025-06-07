@@ -52,3 +52,20 @@
 	    	</property>
 	    </bean>
     -->
+    
+    
+    
+================================================================================
+Reference Type injection 
+i.e, basically injecting an object into other object
+
+lets say we have a class A which needs reference of object B
+A
+Reference injection:
+B
+
+<bean>
+	<property name="A">
+		<ref bean="B" />
+	</property>
+</bean>
