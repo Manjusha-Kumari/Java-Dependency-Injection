@@ -23,4 +23,13 @@
     	<constructor-arg ref="cer"/>
     </bean>
     
+    
+    <!-- ========================================================================= -->
+    <!-- Addition Bean -->
+    <bean class="com.springcore.SpringCore.Constructor.Addition" name="add">
+    	<constructor-arg value="12" type="int" index="1"/>
+    	<constructor-arg value="19" type="int" index="0"/>
+    	<!-- index is used to change the order which should be a which b -->
+    </bean>
+    
 </beans>

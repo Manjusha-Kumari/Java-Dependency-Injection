@@ -32,3 +32,14 @@ Response :
 Commit 4 : Dependency Injection -- constructor injection
 Response :
 	Person [name=Meena, personid=12, certi=AWS by amazon]
+	
+	
+	
+Commit 5 : Ambiguity Problem and its Solution with Constructor Injection
+Response : 
+	Constructor : int : int
+	Person [name=Meena, personid=12, certi=AWS by amazon]
+	Value of a : 19
+	Value of b : 12
+	Sum is : 31
+	
