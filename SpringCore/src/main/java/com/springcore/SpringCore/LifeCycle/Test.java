@@ -9,10 +9,13 @@ public class Test {
 		// TODO Auto-generated method stub
 		
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/SpringCore/LifeCycle/LifeCycleConfig.xml");
-
+		context.registerShutdownHook();
+		
 		Tool tool = (Tool) context.getBean("tool");
 		System.out.println(tool);
-		context.registerShutdownHook();
+		
+		Food food = (Food) context.getBean("food");
+		System.out.println(food);
 	}
 
 }
