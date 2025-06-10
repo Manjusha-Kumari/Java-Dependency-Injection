@@ -43,3 +43,11 @@ Response :
 	Value of b : 12
 	Sum is : 31
 	
+	
+	
+Commit 6 : Implementing Lifecycle methods Using XML
+Response : 
+	Setting property
+	Inside init method
+	Tool [price=30.25]
+	Inside destroy method

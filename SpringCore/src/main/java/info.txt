@@ -77,3 +77,26 @@ B
 Injection using constructor 
 
 Here we can use C Schema (Constructor) as at the time of setter injection we used P Schema (property)
+
+
+
+==================================================================================================
+bean lifecycle if we see the response the init method is called but the destroy method is not called 
+so in order to call the destroy method we need to enable pre shutdown hook on the context
+
+response before pre shutdown hook
+	Setting property
+	Inside init method
+	Tool [price=30.25]
+
+we cannot use this pre shut down hook with the ApplicationContext class in order to do so we need to use 
+one of its parent class AbstractApplicationContext and then use the registerShutdownHook
+After this change 
+	AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/SpringCore/LifeCycle/LifeCycleConfig.xml");
+	context.registerShutdownHook();
+
+response :
+	Setting property
+	Inside init method
+	Tool [price=30.25]
+	Inside destroy method
