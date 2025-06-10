@@ -100,3 +100,42 @@ response :
 	Inside init method
 	Tool [price=30.25]
 	Inside destroy method
+
+	
+	
+
+
+========================================================================================================================
+Bean life cycle using annotations 
+we need to use annotations @postConstruct and @preDestroy here as init and destroy respectively.
+
+However, if our project uses Spring 5.3.x and JDK 9 or a later version, since Spring 5.3.x only supports the javax namespace,
+we must explicitly add the javax.annotation-api dependency to our project:
+<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+
+Also even after adding these in the code it do not seems to work as by default these annotations are disabled we need to enable it.
+So in order to do that we use <context: annotation-config> --> it enables all the annotations present in the package.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,11 +11,14 @@ public class Test {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/SpringCore/LifeCycle/LifeCycleConfig.xml");
 		context.registerShutdownHook();
 		
-		Tool tool = (Tool) context.getBean("tool");
-		System.out.println(tool);
+//		Tool tool = (Tool) context.getBean("tool");
+//		System.out.println(tool);
+//		
+//		Food food = (Food) context.getBean("food");
+//		System.out.println(food);
 		
-		Food food = (Food) context.getBean("food");
-		System.out.println(food);
+		Example example = (Example) context.getBean("example");
+		System.out.println(example);
 	}
 
 }
